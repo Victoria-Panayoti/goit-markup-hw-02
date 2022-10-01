@@ -13,6 +13,7 @@
   --bcg-main: #ffffff;
   --bcg-secondary: #f5f4fa;
   --bcg-dark: #2f303a;
+  --bcg-btn-hover: #188ce8;
 }
 body {
   background-color: var(--bcg-main);
@@ -90,11 +91,14 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--color-accent);
   color: var(--text-white);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--bcg-main);
-  color: var(--color-accent);
+  background-color: var(--bcg-btn-hover);
+  color: var(--text-white);
 }
 /* Section */
 .section {
@@ -169,19 +173,49 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+/* Portfolio filter */
+.filter-button {
+  background-color: var(--bcg-secondary);
+  color: var(--secondary-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--color-accent);
+  color: var(--text-white);
+}
+.filter-button.current {
+  background-color: var(--color-accent);
+  color: var(--text-white);
+}
+/* Portfolio gallery */
+.gallery-card {
+  background-color: var(--bcg-main);
+}
+.gallery-card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.gallery-card-txt {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
 /* Footer */
 .footer {
   background-color: var(--bcg-dark);
-}
-.footer .logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--text-white);
 }
 .footer .link {
   font-style: normal;
@@ -194,4 +228,13 @@ body {
 .footer .link:hover,
 .footer .link:focus {
   color: var(--color-accent);
+}
+.footer .logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-white);
 }
