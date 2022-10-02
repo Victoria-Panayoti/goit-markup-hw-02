@@ -10,6 +10,7 @@
   --secondary-text-color: #212121;
   --text-white: #ffffff;
   --text-black: #000000;
+  --footer-mail-tel:rgba(255, 255, 255, 0.6);
   --bcg-main: #ffffff;
   --bcg-secondary: #f5f4fa;
   --bcg-dark: #2f303a;
@@ -71,23 +72,22 @@ body {
 }
 /* Hero */
 .hero {
+  background-color: var(--bcg-dark);
+  color: var(--text-white);
+}
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: var(--bcg-dark);
-  color: var(--text-white);
 }
 .hero-button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--color-accent);
   color: var(--text-white);
@@ -129,7 +129,6 @@ body {
   color: var(--secondary-text-color);
 }
 .feature-list-txt {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -167,8 +166,6 @@ body {
   letter-spacing: 0.03em;
 }
 .team-list p {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -208,7 +205,6 @@ body {
   color: var(--secondary-text-color);
 }
 .gallery-card-txt {
-  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -219,7 +215,6 @@ body {
 }
 .footer .link {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -231,10 +226,17 @@ body {
 }
 .footer .logo {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-white);
 }
+.footer-list .mail{
+  color:var(--footer-mail-tel);
+}
+.footer-list .tel{
+  color: var(--footer-mail-tel);
+}
+
+
